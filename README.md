@@ -35,7 +35,7 @@
 |英语|已排除|
 |物理|$70 \% $|
 |化学|$50 \% $|
-|生物|$ ? $|
+|生物|$?$|
 
 注:生物看了 $\neq$ 懂了 $\neq$ 会做，故不计进度。
 
@@ -76,7 +76,7 @@
 
 **D** 读题加初思考，很显然并没想到
 
-$\sum\limits_{i=1}^n{\operatorname{min}(\left\lfloor\dfrac{a_i}{k}\right\rfloor,c)}$ 
+$\sum\limits_{i=1}^n{min(\left\lfloor\dfrac{a_i}{k}\right\rfloor,c)}$ 
 
 这个性质，所以感觉有点头疼啊。
 
