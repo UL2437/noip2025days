@@ -121,7 +121,7 @@ $\sum\limits_{i=1}^n{min(\left\lfloor\dfrac{a_i}{k}\right\rfloor,c)}$
 
 ---
 
-#### 后期总结
+### 后期总结
 
 时间大概是 预思考 1H + **A** 1.2H + **B** 1.5H + **C** 0.2H + **D** 0.5H。
 
@@ -247,7 +247,7 @@ $\sum\limits_{i=1}^n{min(\left\lfloor\dfrac{a_i}{k}\right\rfloor,c)}$
 
 ---
 
-#### 总结
+### 总结
 
 今天暴露三个问题：
 
