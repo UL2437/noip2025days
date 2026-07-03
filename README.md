@@ -539,7 +539,6 @@ MD，得把体量压下去， ~~这么多字我都懒得看，~~ 还很浪费时
 
 ### DAY 9
 
-<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/song/%E5%BD%B1%E5%B8%9D%E6%97%A0%E7%94%A8/892731933"></iframe>
 
 看样子还是得认真对拍啊...
 
@@ -840,3 +839,23 @@ A 10000组样例通过 爱你一万年~ 爱你经得起考验~
 ```
 
 是的我每次都用了二分，蠢到极致的实现。
+
+那么为什么我要强调这一点呢？很显然，这样做有一点 **"小小"** 的代价。
+
+写完二分之后终于把所有样例过了，这个时候已经 **11:44** 了，此时此刻我觉得一切都在变好，终于是熬出来了...不过以防万一我还是挂了对拍，殊不知噩梦才刚刚开始。
+
+正当我开开心心写其他题的时候顺手回去看了眼对拍，结果在 $2000$ 组左右错了！我又不得不回去看代码哪里有问题，苦看半天二分代码总算看出来逻辑错误改好继续对拍，如果此时就是 **A** 的结局就好了，可惜二分的思路实在害人不浅，让上面的剧情一再重复，~~让我一再守护 苦等几辈子 义无反顾——~~ ，我的心态也就被这一次次的 **Debug** 搞炸了。
+
+不过对 **A** 而言结局还是好的(呵呵)，就这样调了三次*居然* **A** 过了 **10000** 组样例，那么代价呢？
+
+狂写 **C** **D** 暴力，**C** 最后暴力没调出来， **D** 我居然没有想到**unsigned long long**自然溢出!
+
+```cpp
+/*
+我靠mod 2^64是什么鬼
+1e19 完蛋啦
+```
+
+节选自 **query.cpp**
+
+一步之遥！线段树我秒写了，其它不溢出的样例都是对的，就是不知道那个取模其实就是自然溢出！说实话我也不知道赛上为什么没想出来......
